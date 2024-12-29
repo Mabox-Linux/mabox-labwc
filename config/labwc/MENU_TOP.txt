@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openbox_menu>
+
+<menu id="root-menu">
+  <!-- Make client-list-combined-menu a submenu of root-menu 
+       You must supply a label or it will not appear in root-menu -->
+ 
+  <separator label="Labwc 0.8.2" />
+  <item label="[ W-f ] File Manager">
+    <action name="Execute" command="pcmanfm" />
+  </item>
+  <item label="[ W-w ] Web Browser">
+    <action name="Execute" command="firefox" />
+  </item>
+  <item label="[ W-t ] Terminal">
+    <action name="Execute" command="foot" />
+  </item>
+  <separator />
+  <menu id="client-list-combined-menu" label="Running..." />

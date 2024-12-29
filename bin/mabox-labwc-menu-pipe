@@ -1,0 +1,5 @@
+#!/bin/bash
+# for use in labwc main menu
+CFG_DIR=${LABWC_CONFIG_DIR:=~/.config/labwc}
+
+labwc-menu-generator -p -i ${CFG_DIR}/MENU_IGNORE.txt -t foot

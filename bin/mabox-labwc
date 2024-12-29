@@ -1,0 +1,2 @@
+#!/bin/bash
+labwc -C $HOME/.config/mabox-labwc/

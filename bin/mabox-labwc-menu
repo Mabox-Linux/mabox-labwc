@@ -1,0 +1,21 @@
+#!/bin/bash
+
+CFG_DIR=${LABWC_CONFIG_DIR:=~/.config/labwc}
+
+# static top menu 
+cat ${CFG_DIR}/MENU_TOP.txt > ${CFG_DIR}/menu.xml
+
+if [ "${1}" == "-p" ];then
+
+echo "<separator />" >> ${CFG_DIR}/menu.xml
+echo "<menu id=\"applications\" label=\"Applications\" execute=\"mabox-labwc-menu-pipe\" />" >> ${CFG_DIR}/menu.xml
+
+else
+echo "<separator label=\"Applications\"/>" >> ${CFG_DIR}/menu.xml
+labwc-menu-generator -b -i ${CFG_DIR}/MENU_IGNORE.txt -t foot >> ${CFG_DIR}/menu.xml
+fi
+# static bottom menu
+cat ${CFG_DIR}/MENU_BOTTOM.txt >> ${CFG_DIR}/menu.xml
+
+# reload labwc config
+LABWC_PID=$(pgrep -x labwc) labwc -r

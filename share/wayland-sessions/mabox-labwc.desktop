@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Mabox Labwc (experimental)
+Comment=A wayland stacking compositor
+Exec=mabox-labwc
+Icon=labwc
+Type=Application
+DesktopNames=labwc;wlroots
