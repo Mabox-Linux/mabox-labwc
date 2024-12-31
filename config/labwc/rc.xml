@@ -220,20 +220,50 @@
     <keybind key="A-Tab">
       <action name="NextWindow"/>
     </keybind>
-    <keybind key="W-Return"><action name="Execute" command="foot"/></keybind>
-    <keybind key="W-t"><action name="Execute" command="foot"/></keybind>
-    <keybind key="W-w"><action name="Execute" command="firefox"/></keybind>
-    <keybind key="W-f"><action name="Execute" command="pcmanfm"/></keybind>
-    <keybind key="W-e"><action name="Execute" command="geany"/></keybind>
-    <keybind key="W-v"><action name="Execute" command="pavucontrol"/></keybind>
-    <keybind key="W-r"><action name="Execute" command="foot pyradio"/></keybind>
-    <keybind key="W-m"><action name="Execute" command="mb-music -s"/></keybind>
-    <keybind key="W-slash"><action name="Execute" command="fsearch"/></keybind>
+    <keybind key="W-Return">
+      <action name="Execute" command="foot"/>
+    </keybind>
+    <keybind key="W-t">
+      <action name="Execute" command="foot"/>
+    </keybind>
+    <keybind key="A-F2">
+      <action name="Execute" command="gmrun"/>
+    </keybind>
+    <keybind key="A-F3">
+      <action name="Execute" command="bemenu-run"/>
+    </keybind>
+    <keybind key="W-w">
+      <action name="Execute" command="firefox"/>
+    </keybind>
+    <keybind key="W-f">
+      <action name="Execute" command="pcmanfm"/>
+    </keybind>
+    <keybind key="W-e">
+      <action name="Execute" command="geany"/>
+    </keybind>
+    <keybind key="W-v">
+      <action name="Execute" command="pavucontrol"/>
+    </keybind>
+    <keybind key="W-r">
+      <action name="Execute" command="foot pyradio"/>
+    </keybind>
+    <keybind key="W-m">
+      <action name="Execute" command="mb-music -s"/>
+    </keybind>
+    <keybind key="W-slash">
+      <action name="Execute" command="fsearch"/>
+    </keybind>
     <keybind key="A-F4">
       <action name="Close"/>
     </keybind>
+    <keybind key="F11">
+      <action name="ToggleFullscreen"/>
+    </keybind>
     <keybind key="W-a">
       <action name="ToggleMaximize"/>
+    </keybind>
+    <keybind key="W-b">
+      <action name="ToggleDecorations"/>
     </keybind>
     <keybind key="A-Left">
       <action name="MoveToEdge" direction="left"/>
