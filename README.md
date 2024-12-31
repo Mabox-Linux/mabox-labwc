@@ -7,6 +7,9 @@ Mabox provides two Labwc sessions/profiles
 
 Both are very basic at the moment.
 
+### ISO Image
+Pre-release ISO is available at [repo.maboxlinux.org/iso/pre-release](https://repo.maboxlinux.org/iso/pre-release/)
+
 ### Keybindings
 #### Actions
 
@@ -44,5 +47,4 @@ Both are very basic at the moment.
 | `W`-`m`                  | sound and music menu (jgmenu)
 
 
-
-![](/img/Mabox_Labwc_241229.avif)
+![](/img/Mabox_Labwc_241231.avif)
