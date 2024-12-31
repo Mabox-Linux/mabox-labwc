@@ -1,0 +1,260 @@
+@define-color theme_text_color white;
+@define-color theme_bg_color black;
+@define-color theme_fg_color white;
+@define-color borders rgba(256,256,256,0.3);
+
+window#sfwbar {
+  -GtkWidget-direction: top;
+  border-radius: 4px;
+  background-color: rgba(0,0,0,0.6);
+}
+
+grid#layout {
+  -GtkWidget-direction: right;
+  padding: 0px 4px 0px 4px;
+  min-height: 32px;
+}
+
+grid {
+  padding: 0px;
+  margin: 0px;
+}
+
+tooltip {
+  background-color: @theme_bg_color;
+}
+
+image {
+  min-width: 18px;
+  min-height: 18px;
+  box-shadow: none;
+  border: none;
+  border-image: none;
+  background-image: none;
+  background: none;
+  -gtk-icon-shadow: none;
+}
+
+button {
+  box-shadow: none;
+  border-image: none;
+  background-image: none;
+  background: none;
+  outline-style: none;
+}
+
+menu {
+  background-color: #222222;
+  border: 0px solid @borders;
+  padding: 6px;
+}
+
+menu arrow {
+  background-color: rgba(0,0,0,0);
+  color: @theme_text_color;
+}
+
+menuitem {
+  color: @theme_text_color;
+  padding: 3px;
+  border-radius: 3px;
+}
+menuitem:hover {
+  background-color: rgba(200,0,0,0.6);
+}
+
+menu image {
+  padding-right: 5px;
+}
+
+progressbar trough {
+  background-color: rgba(256, 256, 256, 0.5);
+  border-color: rgba(256,256,256,0.5);
+}
+
+#hidden {
+  -GtkWidget-visible: false;
+}
+
+button#taskbar_normal grid {
+  -GtkWidget-hexpand: false;
+}
+
+button#taskbar_group_normal image,
+button#taskbar_group_active image,
+button#taskbar_group_normal:hover image {
+  min-width: 24px;
+  min-height: 24px;
+}
+
+button#taskbar_group_normal label,
+button#taskbar_group_active label,
+button#taskbar_group_normal:hover label {
+  padding: 0px 0px 0px 5px;
+  -GtkWidget-hexpand: false;
+}
+
+button#taskbar_group_normal,
+button#taskbar_group_active,
+button#taskbar_group_normal:hover {
+  padding: 0px 5px 0px 5px;
+  margin: 2px 1px 2px 1px;
+  border-radius: 2px;
+  background-color: rgba(119,119,119,0.2);
+  border-color: rgba(119,119,119,0.2);
+  -GtkWidget-hexpand: false;
+}
+
+button#taskbar_group_active {
+  background-color: rgba(0,0,0,0.1);
+  border-color: rgba(0,255,0,0.3);
+  border-radius: 0px;
+}
+
+button#taskbar_group_normal:hover,
+button#taskbar_group_active:hover {
+  background-color: rgba(176,176,176,0.22);
+  border-color: rgba(234,234,234,0.44);
+}
+window#taskbar_group_normal {
+  background-color: #222222;
+  border:4px;
+  border-color: #FF0000;
+  }
+
+button#pager_normal,
+button#pager_visible,
+button#pager_focused {
+  padding: 0px 5px 0px 5px;
+  border-radius: 4px;
+  background-color: rgba(119,119,119,0);
+  border-color: rgba(119,119,119,0);
+}
+
+button#pager_focused {
+  background-color: rgba(119,119,119,0.2);
+  border: none;
+}
+
+button#pager_preview {
+  border-radius: 0;
+  border-color: #000000;
+  border-width: 0.25mm;
+  color: #777777;
+  min-width: 5cm;
+  min-height: 2.8125cm;
+}
+
+grid#switcher_active image,
+grid#switcher_active {
+  min-width: 60px;
+  min-height: 60px;
+  border-image: none;
+  padding: 6px;
+  background-color: #777777;
+  border: 0px;
+  box-shadow: none;
+  border-radius: 1.25mm;
+  -GtkWidget-hexpand: true;
+}
+
+grid#switcher_normal image,
+grid#switcher_normal {
+  min-width: 60px;
+  min-height: 60px;
+  padding: 6px;
+  -GtkWidget-direction: right;
+  -GtkWidget-hexpand: true;
+}
+
+window#switcher { 
+  background-color: rgba(0,0,0,0);
+  padding: 6px; 
+  -GtkWidget-hexpand: true;
+}
+
+grid#switcher { 
+  border-radius: 6px;
+  background-color: @theme_bg_color;
+  border: 1px solid @borders;
+  padding: 6px;
+  box-shadow: none;
+  -GtkWidget-hexpand: true;
+}
+
+button#tray_active,
+button#tray_passive,
+button#tray_attention {
+  padding: 0px 1px 0px 0px;
+  border: none;
+  margin: 0px;
+  -GtkWidget-valign: center;
+}
+
+
+button#module,
+button#launcher,
+button#showdesktop,
+button#startmenu {
+  padding: 0px 4px 0px 4px;
+  border: none;
+  -GtkWidget-valign: center;
+}
+
+button#startmenu {
+  border: 0px solid;
+  border-radius: 0px;
+}
+
+button#startmenu image {
+  min-width: 24px;
+  min-height: 24px;
+  padding: 1px;
+}
+
+chart#cpu_chart {
+  background: rgba(127,127,127,0.3);
+  min-width: 19px;
+  margin: 2px;
+  border: 1px solid @borders;
+  color: red;
+}
+
+progressbar#memory {
+  -GtkWidget-direction: top;
+  min-width: 19px;
+  border: 1px solid @borders;
+  margin: 2px;
+}
+
+progressbar#memory trough {
+  min-height: 2px;
+  min-width: 19px;
+  border: none;
+  border-radius: 0px;
+  background: rgba(127,127,127,0.3);
+}
+
+progressbar#memory progress {
+  -GtkWidget-hexpand: true;
+  min-width: 19px;
+  border-radius: 0px;
+  border: none;
+  margin: 0px;
+  background-color: alpha(green,0.9);
+}
+
+label#sway_lang {
+  margin-left: 3px;
+  margin-right: 5px;
+}
+
+label {
+  font: 12px Sans;
+  color: @theme_text_color;
+  text-shadow: none;
+}
+
+* {
+  -GtkWidget-vexpand: true;
+}

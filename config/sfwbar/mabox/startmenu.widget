@@ -1,0 +1,11 @@
+module("appmenu")
+
+layout {
+  button {
+    value = "/usr/share/icons/hicolor/scalable/apps/labwc.svg"
+    style = "startmenu"
+    action = Menu "app_menu_system"
+    action[3] = "killall -SIGHUP sfwbar"
+    tooltip = "1:Application menu | 3: reload panel"
+  }
+}
