@@ -1,8 +1,14 @@
-  <separator label="Labwc settings"/>
+  <separator />
+  <menu id="labwcconf" label="Labwc">
+  <!--<item label="Config helper">
+  <action name="Execute" command="yhtml ~/.config/mabox-labwc/config-helper.html 'Mabox Labwc Config helper'" />
+  </item>//-->
+  <item label="󰑓 Reconfigure Labwc">
+    <action name="Reconfigure" />
+  </item>
   <item label="Labwc Tweaks">
     <action name="Execute" command="labwc-tweaks" />
   </item>
-  <menu id="regmenu" label="Regenerate menu">
   <separator label="Menu type"/>
   <item label="Static (apps in rootmenu)">
     <action name="Execute" command="mabox-labwc-menu" />
@@ -10,7 +16,7 @@
   <item label="Dynamic (apps in submenu)">
     <action name="Execute" command="mabox-labwc-menu -p" />
   </item>
-  <separator label="Edit..." />
+  <separator />
   <item label="MENU_TOP.txt">
     <action name="Execute" command="geany ~/.config/mabox-labwc/MENU_TOP.txt" />
   </item>
@@ -21,10 +27,7 @@
     <action name="Execute" command="geany ~/.config/mabox-labwc/MENU_IGNORE.txt" />
   </item>
   </menu>
-  <item label="Reconfigure Labwc">
-    <action name="Reconfigure" />
-  </item>
-  <separator label="Exit..." />
+  <separator />
   <item label="Exit">
     <action name="Exit" />
   </item>

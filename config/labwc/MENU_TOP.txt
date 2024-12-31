@@ -6,13 +6,13 @@
        You must supply a label or it will not appear in root-menu -->
  
   <separator label="Labwc 0.8.2" />
-  <item label="[ W-f ] File Manager">
+  <item label="File Manager">
     <action name="Execute" command="pcmanfm" />
   </item>
-  <item label="[ W-w ] Web Browser">
+  <item label="Web Browser">
     <action name="Execute" command="firefox" />
   </item>
-  <item label="[ W-t ] Terminal">
+  <item label="Terminal">
     <action name="Execute" command="foot" />
   </item>
   <separator />
